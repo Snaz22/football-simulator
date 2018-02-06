@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Football Simulator</title>
+</head>
+
+<body>
+  <h1>Football Simulator</h1>
+  <select id="leagueChoice">
+    <option value="" disabled selected>Select League</option>
+    <option value="English Premier League">English Premier League</option>
+    <option value="Spanish BBVA">Spanish BBVA</option>
+  </select>
+  <input type="submit" name="submit" value="Simulate" onclick="leagueSelect()">
+  <div id="english">
+
+  </div>
+  <div id="matches">
+
+  </div>
+</body>
+
+<script src="./spanishPrem.js" type="text/javascript"></script>
+<script src="./englishPrem.js" type="text/javascript"></script>
+<script src="./script.js" type="text/javascript"></script>
+
+</html>
