@@ -1,20 +1,16 @@
-//Array of team objects.
+//Array of team objects from selected league, and array of html paragraphs for all of the matches that will take place in theat league.
 var currentLeague;
 var allMatches = [];
 
 function leagueSelect(){
-  //debugger;
   allMatches = [];
   var choice = document.getElementById("leagueChoice").value;
   switch(choice) {
     case "English Premier League":
-      //var bn = copy(epl1);
       currentLeague = copy(english1);
-      // currentLeague = epl1.slice()
       break;
     case "Spanish BBVA":
     currentLeague = copy(spain1);
-      // currentLeague = spain1.slice()
       break;
   }
   clearScreen();
@@ -36,10 +32,6 @@ function copy(o) {
    return output;
 }
 
-//var currentLeague = spain1.slice();
-var homeWins = 0; // Test
-var awayWins = 0; // Test
-var draws = 0; // Test
 function playGames() {
   for(i = 0; i < currentLeague.length; i++){
     for(j = 0; j < currentLeague.length; j++){
@@ -151,11 +143,12 @@ function playGames() {
           awayGoals = 10;
         }
 
-        // Add a paragraph element to the 'allMatches' array,which contains the text output for each fixture.
+        // Add a paragraph element to the 'allMatches' array, which contains the text output for each fixture.
         var thisGame = document.createElement('p');
         thisGame.innerHTML = currentLeague[i].name + ' ' + homeGoals + ' - ' + awayGoals+ ' ' + currentLeague[j].name;
         allMatches.push(thisGame);
 
+        // Update team totals after fixture result.
         currentLeague[i].played++;
         currentLeague[j].played++;
         currentLeague[i].for += homeGoals;
@@ -166,24 +159,20 @@ function playGames() {
           currentLeague[i].won++;
           currentLeague[j].lost++;
           currentLeague[i].points += 3;
-          homeWins++; // Test
         } else if(awayGoals > homeGoals) {
           currentLeague[j].won++;
           currentLeague[i].lost++;
           currentLeague[j].points += 3;
-          awayWins++; // Test
         } else {
           currentLeague[i].drawn++;
           currentLeague[j].drawn++;
           currentLeague[i].points++;
           currentLeague[j].points++;
-          draws++; // Test
         }
       }
     }
   }
 }
-//playGames();
 
 // Print the final league table.
 function printTeams() {
@@ -254,9 +243,6 @@ function sortTable() {
   });
 }
 
-// Call the print teams function.
-//printTeams();
-
 // Add all of the fixture's text to the body of the page.
 function printMatches() {
   allMatches.forEach(function(match) {
@@ -268,24 +254,3 @@ function clearScreen() {
   document.getElementById("english").innerHTML = "";
   document.getElementById("matches").innerHTML = "";
 }
-
-
-
-// Test
-// function winDrawLose() {
-//   console.log(homeWins);
-//   console.log(awayWins);
-//   console.log(draws);
-// }
-//
-// winDrawLose();
-
-
-
-// currentLeague.forEach(function(team) {
-//   //debugger;
-//   var myTeams = document.createElement('p');
-//   var teamNode = document.createTextNode(team.name + " " + team.points);
-//   myTeams.appendChild(teamNode);
-//   document.body.appendChild(myTeams);
-// });
