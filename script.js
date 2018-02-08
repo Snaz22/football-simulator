@@ -10,7 +10,10 @@ function leagueSelect(){
       currentLeague = copy(english1);
       break;
     case "Spanish BBVA":
-    currentLeague = copy(spain1);
+      currentLeague = copy(spain1);
+      break;
+    case "German Bundesliga":
+      currentLeague = copy(german1);
       break;
   }
   clearScreen();
