@@ -181,17 +181,17 @@ function playGames() {
 function printTeams() {
 
   // Create table.
-  var englishTable = document.createElement('table');
-  englishTable.id = 'englishTable';
-  var englishHeader = document.createElement('tr');
-  englishHeader.id = 'englishHeader';
-  document.getElementById('english').appendChild(englishTable);
-  document.getElementById('englishTable').appendChild(englishHeader);
+  var leagueTable = document.createElement('table');
+  leagueTable.id = 'leagueTable';
+  var leagueHeader = document.createElement('tr');
+  leagueHeader.id = 'leagueHeader';
+  document.getElementById('displayTable').appendChild(leagueTable);
+  document.getElementById('leagueTable').appendChild(leagueHeader);
   var headerTags = ['P', 'W', 'D', 'L', 'F', 'A', 'GD', 'Pts'];
   var headerTagCount = 0;
   for(i = 0; i < 10; i++) {
     var headerTd = document.createElement('td');
-    document.getElementById('englishHeader').appendChild(headerTd);
+    document.getElementById('leagueHeader').appendChild(headerTd);
     if(i > 1) {
       headerTd.innerHTML = headerTags[headerTagCount];
       headerTagCount++;
@@ -213,7 +213,7 @@ function printTeams() {
       teamName.innerHTML = teamData[i];
     }
 
-    document.getElementById('englishTable').appendChild(teamRow);
+    document.getElementById('leagueTable').appendChild(teamRow);
     var position = document.createElement('td');
     position.innerHTML = teamCount;
     document.getElementById(teams.name).appendChild(position);
@@ -254,6 +254,6 @@ function printMatches() {
 }
 
 function clearScreen() {
-  document.getElementById("english").innerHTML = "";
+  document.getElementById("displayTable").innerHTML = "";
   document.getElementById("matches").innerHTML = "";
 }
