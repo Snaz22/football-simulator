@@ -6,13 +6,19 @@
 
 <body>
   <h1>Football Simulator</h1>
-  <select id="leagueChoice">
-    <option value="" disabled selected>Select League</option>
-    <option value="English Premier League">English Premier League</option>
-    <option value="Spanish BBVA">Spanish BBVA</option>
-    <option value="German Bundesliga">German Bundesliga</option>
-  </select>
-  <input type="submit" name="submit" value="Simulate" onclick="leagueSelect()">
+  <div id="menu">
+    <select id="leagueChoice">
+      <option value="" disabled selected>Select League</option>
+      <option value="English Premier League">English Premier League</option>
+      <option value="Spanish BBVA">Spanish BBVA</option>
+      <option value="German Bundesliga">German Bundesliga</option>
+    </select>
+    <input type="submit" name="submit" value="Simulate" onclick="leagueSelect()">
+    <br>
+    <div id="teamSelectMenu">
+
+    </div>
+  </div>
   <div id="displayTable">
 
   </div>

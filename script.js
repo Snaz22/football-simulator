@@ -21,7 +21,8 @@ function leagueSelect(){
   calculateGoalDifference();
   sortTable();
   printTeams();
-  printMatches();
+  teamMatchDropdown();
+  //printMatches();
 }
 
 // Create a full copy of the selected league array.
@@ -250,6 +251,40 @@ function sortTable() {
 function printMatches() {
   allMatches.forEach(function(match) {
     document.getElementById("matches").appendChild(match);
+  });
+}
+
+function teamMatchDropdown() {
+  var teamList = document.getElementById("teamSelectMenu");
+  teamList.innerHTML = "";
+  var dropdown = document.createElement("select");
+  dropdown.id = "teamSelect";
+  document.getElementById("teamSelectMenu").appendChild(dropdown);
+  var disabledOption = document.createElement("option");
+  disabledOption.innerHTML = "Select a Team";
+  disabledOption.disabled = true;
+  disabledOption.selected = true;
+  document.getElementById("teamSelect").appendChild(disabledOption);
+  currentLeague.forEach(function(team) {
+    var teamOption = document.createElement("option");
+    teamOption.innerHTML = team.name;
+    document.getElementById("teamSelect").appendChild(teamOption);
+  });
+  var teamMatchSubmit = document.createElement("input");
+  teamMatchSubmit.type = "submit";
+  teamMatchSubmit.id = "teamMatch";
+  document.getElementById("teamSelectMenu").appendChild(teamMatchSubmit);
+  teamMatchSubmit.value = "Show Results";
+  document.getElementById("teamMatch").addEventListener("click", printMatchesOneTeam);
+}
+
+function printMatchesOneTeam() {
+  document.getElementById("matches").innerHTML = "";
+  var selectedTeam = document.getElementById("teamSelect").value;
+  allMatches.forEach(function(match) {
+    if(match.innerHTML.indexOf(selectedTeam) != -1) {
+      document.getElementById("matches").appendChild(match);
+    }
   });
 }
 
