@@ -254,6 +254,7 @@ function printMatches() {
   });
 }
 
+// Create a dropdown menu so a team can be selected to view their results.
 function teamMatchDropdown() {
   var teamList = document.getElementById("teamSelectMenu");
   teamList.innerHTML = "";
@@ -278,6 +279,7 @@ function teamMatchDropdown() {
   document.getElementById("teamMatch").addEventListener("click", printMatchesOneTeam);
 }
 
+// Display only the selected team's results.
 function printMatchesOneTeam() {
   document.getElementById("matches").innerHTML = "";
   var selectedTeam = document.getElementById("teamSelect").value;
@@ -288,6 +290,7 @@ function printMatchesOneTeam() {
   });
 }
 
+// Clear the league table and the matches.
 function clearScreen() {
   document.getElementById("displayTable").innerHTML = "";
   document.getElementById("matches").innerHTML = "";
