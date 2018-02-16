@@ -286,10 +286,23 @@ function teamMatchDropdown() {
 function printMatchesOneTeam() {
   document.getElementById("matches").innerHTML = "";
   var selectedTeam = document.getElementById("teamSelect").value;
+  var matchArray = [];
   allMatches.forEach(function(match) {
     if(match.innerHTML.indexOf(selectedTeam) != -1) {
-      document.getElementById("matches").appendChild(match);
+      matchArray.push(match);
     }
+  });
+  // Shuffle the array to print matches in a random order.
+  var count = matchArray.length, index, temp;
+  while(count > 0) {
+    index = Math.floor(Math.random() * count);
+    count--;
+    temp = matchArray[count];
+    matchArray[count] = matchArray[index];
+    matchArray[index] = temp;
+  }
+  matchArray.forEach(function(currentTeamMatch) {
+    document.getElementById("matches").appendChild(currentTeamMatch);
   });
 }
 
