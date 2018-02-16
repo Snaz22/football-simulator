@@ -18,6 +18,9 @@ function leagueSelect(){
     case "Italian Serie A":
       currentLeague = copy(italian1);
       break;
+    case "French Ligue 1":
+      currentLeague = copy(french1);
+      break;
   }
   clearScreen();
   playGames();

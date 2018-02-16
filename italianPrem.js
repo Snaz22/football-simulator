@@ -1,7 +1,7 @@
 var italian1 = [
   {
     name: 'Napoli',
-    rating: 9,
+    rating: 10,
     played: 0,
     won: 0,
     drawn: 0,
@@ -13,7 +13,7 @@ var italian1 = [
   },
   {
     name: 'Juventus',
-    rating: 10.5,
+    rating: 11.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -25,7 +25,7 @@ var italian1 = [
   },
   {
     name: 'Inter Milan',
-    rating: 7.5,
+    rating: 8.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -37,7 +37,7 @@ var italian1 = [
   },
   {
     name: 'Roma',
-    rating: 7.5,
+    rating: 8.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -49,7 +49,7 @@ var italian1 = [
   },
   {
     name: 'Lazio',
-    rating: 7,
+    rating: 8,
     played: 0,
     won: 0,
     drawn: 0,
@@ -61,18 +61,6 @@ var italian1 = [
   },
   {
     name: 'Sampdoria',
-    rating: 6,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'AC Milan',
     rating: 7,
     played: 0,
     won: 0,
@@ -84,8 +72,20 @@ var italian1 = [
     points: 0
   },
   {
+    name: 'AC Milan',
+    rating: 8,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
     name: 'Atalanta',
-    rating: 5.5,
+    rating: 6.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -97,7 +97,7 @@ var italian1 = [
   },
   {
     name: 'Torino',
-    rating: 5,
+    rating: 6,
     played: 0,
     won: 0,
     drawn: 0,
@@ -109,7 +109,7 @@ var italian1 = [
   },
   {
     name: 'Udinese',
-    rating: 4.5,
+    rating: 5.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -121,7 +121,7 @@ var italian1 = [
   },
   {
     name: 'Fiorentina',
-    rating: 4.5,
+    rating: 5.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -133,7 +133,7 @@ var italian1 = [
   },
   {
     name: 'Genoa',
-    rating: 3.5,
+    rating: 4.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -145,7 +145,7 @@ var italian1 = [
   },
   {
     name: 'Bologna',
-    rating: 3,
+    rating: 4,
     played: 0,
     won: 0,
     drawn: 0,
@@ -157,7 +157,7 @@ var italian1 = [
   },
   {
     name: 'Cagliari',
-    rating: 3,
+    rating: 4,
     played: 0,
     won: 0,
     drawn: 0,
@@ -169,7 +169,7 @@ var italian1 = [
   },
   {
     name: 'Sassuolo',
-    rating: 2.5,
+    rating: 3.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -181,7 +181,7 @@ var italian1 = [
   },
   {
     name: 'Chievo',
-    rating: 3,
+    rating: 4,
     played: 0,
     won: 0,
     drawn: 0,
@@ -193,7 +193,7 @@ var italian1 = [
   },
   {
     name: 'Crotone',
-    rating: 2.5,
+    rating: 3.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -205,7 +205,7 @@ var italian1 = [
   },
   {
     name: 'SPAL',
-    rating: 1.5,
+    rating: 2.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -217,7 +217,7 @@ var italian1 = [
   },
   {
     name: 'Hellas Verona',
-    rating: 1.5,
+    rating: 2.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -229,7 +229,7 @@ var italian1 = [
   },
   {
     name: 'Benevento',
-    rating: 0.5,
+    rating: 1.5,
     played: 0,
     won: 0,
     drawn: 0,

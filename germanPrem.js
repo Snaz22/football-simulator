@@ -1,7 +1,7 @@
 var german1 = [
   {
     name: 'Bayern Munich',
-    rating: 11.5,
+    rating: 12.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -13,30 +13,6 @@ var german1 = [
   },
   {
     name: 'Bayer Leverkusen',
-    rating: 8,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'RB Leipzig',
-    rating: 8,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Borussia Dortmund',
     rating: 9,
     played: 0,
     won: 0,
@@ -48,8 +24,32 @@ var german1 = [
     points: 0
   },
   {
+    name: 'RB Leipzig',
+    rating: 9,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Borussia Dortmund',
+    rating: 10,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
     name: 'FC Schalke 04',
-    rating: 7.5,
+    rating: 8.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -61,7 +61,7 @@ var german1 = [
   },
   {
     name: 'Eintracht Frankfurt',
-    rating: 6.5,
+    rating: 7.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -73,7 +73,7 @@ var german1 = [
   },
   {
     name: 'FC Augsburg',
-    rating: 5.5,
+    rating: 6.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -85,7 +85,7 @@ var german1 = [
   },
   {
     name: 'Borussia Monchengladbach',
-    rating: 6,
+    rating: 7,
     played: 0,
     won: 0,
     drawn: 0,
@@ -97,7 +97,7 @@ var german1 = [
   },
   {
     name: '1899 Hoffenheim',
-    rating: 5,
+    rating: 6,
     played: 0,
     won: 0,
     drawn: 0,
@@ -109,7 +109,7 @@ var german1 = [
   },
   {
     name: 'Hannover 96',
-    rating: 5,
+    rating: 6,
     played: 0,
     won: 0,
     drawn: 0,
@@ -121,7 +121,7 @@ var german1 = [
   },
   {
     name: 'Hertha Berlin',
-    rating: 4,
+    rating: 5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -133,42 +133,6 @@ var german1 = [
   },
   {
     name: 'SC Freiburg',
-    rating: 3,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'VfL Wolfsburg',
-    rating: 4.5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'VfB Stuttgart',
-    rating: 3.5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Werder Bremen',
     rating: 4,
     played: 0,
     won: 0,
@@ -180,8 +144,44 @@ var german1 = [
     points: 0
   },
   {
+    name: 'VfL Wolfsburg',
+    rating: 5.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'VfB Stuttgart',
+    rating: 4.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Werder Bremen',
+    rating: 5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
     name: 'Mainz 05',
-    rating: 2.5,
+    rating: 3.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -193,7 +193,7 @@ var german1 = [
   },
   {
     name: 'Hamburg SV',
-    rating: 2,
+    rating: 3,
     played: 0,
     won: 0,
     drawn: 0,
@@ -205,7 +205,7 @@ var german1 = [
   },
   {
     name: 'FC Koln',
-    rating: 1.5,
+    rating: 2.5,
     played: 0,
     won: 0,
     drawn: 0,

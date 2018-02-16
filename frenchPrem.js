@@ -1,42 +1,6 @@
-var english1 = [
+var french1 = [
   {
-    name: 'Arsenal',
-    rating: 10,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Man Utd',
-    rating: 10.5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Chelsea',
-    rating: 11,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Man City',
+    name: 'PSG',
     rating: 11.5,
     played: 0,
     won: 0,
@@ -48,8 +12,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Liverpool',
-    rating: 10,
+    name: 'Monaco',
+    rating: 9,
     played: 0,
     won: 0,
     drawn: 0,
@@ -60,8 +24,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Tottenham',
-    rating: 10,
+    name: 'Marseille',
+    rating: 8,
     played: 0,
     won: 0,
     drawn: 0,
@@ -72,8 +36,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'West Ham',
-    rating: 5.5,
+    name: 'Lyon',
+    rating: 7.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -84,31 +48,7 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Southampton',
-    rating: 6.5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Leicester',
-    rating: 6,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Newcastle',
+    name: 'Nantes',
     rating: 5,
     played: 0,
     won: 0,
@@ -120,43 +60,7 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Burnley',
-    rating: 4,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Watford',
-    rating: 4,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Crystal Palace',
-    rating: 3,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Bournemouth',
+    name: 'Montpellier',
     rating: 5.5,
     played: 0,
     won: 0,
@@ -168,8 +72,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Huddersfield',
-    rating: 3,
+    name: 'Bordeaux',
+    rating: 5.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -180,7 +84,31 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Brighton',
+    name: 'Rennes',
+    rating: 4.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Nice',
+    rating: 5.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Guingamp',
     rating: 4,
     played: 0,
     won: 0,
@@ -192,7 +120,7 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Swansea',
+    name: 'Caen',
     rating: 3.5,
     played: 0,
     won: 0,
@@ -204,8 +132,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Stoke',
-    rating: 5.5,
+    name: 'Dijon',
+    rating: 3,
     played: 0,
     won: 0,
     drawn: 0,
@@ -216,8 +144,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'West Brom',
-    rating: 4,
+    name: 'Strasbourg',
+    rating: 2.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -228,8 +156,80 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Everton',
-    rating: 6.5,
+    name: 'Saint-Etienne',
+    rating: 3,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Toulouse',
+    rating: 2,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Lille',
+    rating: 3.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Amiens',
+    rating: 1.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Angers',
+    rating: 1.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Troyes',
+    rating: 1,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Metz',
+    rating: 0.5,
     played: 0,
     won: 0,
     drawn: 0,

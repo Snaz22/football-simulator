@@ -1,7 +1,7 @@
 var spain1 = [
   {
     name: 'Barcelona',
-    rating: 12,
+    rating: 13,
     played: 0,
     won: 0,
     drawn: 0,
@@ -13,7 +13,7 @@ var spain1 = [
   },
   {
     name: 'Real Madrid',
-    rating: 11.5,
+    rating: 12.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -25,7 +25,7 @@ var spain1 = [
   },
   {
     name: 'Atletico Madrid',
-    rating: 10,
+    rating: 11,
     played: 0,
     won: 0,
     drawn: 0,
@@ -37,7 +37,7 @@ var spain1 = [
   },
   {
     name: 'Valencia',
-    rating: 8,
+    rating: 9,
     played: 0,
     won: 0,
     drawn: 0,
@@ -49,7 +49,7 @@ var spain1 = [
   },
   {
     name: 'Villareal',
-    rating: 7,
+    rating: 8,
     played: 0,
     won: 0,
     drawn: 0,
@@ -61,7 +61,7 @@ var spain1 = [
   },
   {
     name: 'Sevilla',
-    rating: 7,
+    rating: 8,
     played: 0,
     won: 0,
     drawn: 0,
@@ -73,18 +73,6 @@ var spain1 = [
   },
   {
     name: 'Eibar',
-    rating: 4.5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Celta Vigo',
     rating: 5.5,
     played: 0,
     won: 0,
@@ -96,55 +84,19 @@ var spain1 = [
     points: 0
   },
   {
+    name: 'Celta Vigo',
+    rating: 6.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
     name: 'Girona',
-    rating: 5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Real Betis',
-    rating: 4,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Getafe',
-    rating: 3,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Leganes',
-    rating: 3,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Athletic Bilbao',
     rating: 6,
     played: 0,
     won: 0,
@@ -156,8 +108,8 @@ var spain1 = [
     points: 0
   },
   {
-    name: 'Real Sociedad',
-    rating: 4.5,
+    name: 'Real Betis',
+    rating: 5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -168,7 +120,7 @@ var spain1 = [
     points: 0
   },
   {
-    name: 'Espanyol',
+    name: 'Getafe',
     rating: 4,
     played: 0,
     won: 0,
@@ -180,8 +132,56 @@ var spain1 = [
     points: 0
   },
   {
+    name: 'Leganes',
+    rating: 4,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Athletic Bilbao',
+    rating: 7,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Real Sociedad',
+    rating: 5.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Espanyol',
+    rating: 5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
     name: 'Alaves',
-    rating: 3,
+    rating: 4,
     played: 0,
     won: 0,
     drawn: 0,
@@ -193,30 +193,6 @@ var spain1 = [
   },
   {
     name: 'Levante',
-    rating: 2,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Deportivo La Coruna',
-    rating: 3.5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Las Palmas',
     rating: 3,
     played: 0,
     won: 0,
@@ -228,8 +204,32 @@ var spain1 = [
     points: 0
   },
   {
+    name: 'Deportivo La Coruna',
+    rating: 4.5,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Las Palmas',
+    rating: 4,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
     name: 'Malaga',
-    rating: 3.5,
+    rating: 4.5,
     played: 0,
     won: 0,
     drawn: 0,
