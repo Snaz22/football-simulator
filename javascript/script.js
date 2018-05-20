@@ -23,7 +23,7 @@ function leagueSelect(){
       currentLeague = copy(french1);
       break;
     case "Custom League":
-      currentLeague = addCustomLeague(document.getElementById("teamInputs").children.length);
+      currentLeague = addCustomLeague(document.getElementById("teamCountDropdown").value);
       //isCustom();
       custom = true;
       break;
@@ -72,9 +72,13 @@ function createTeamInputs() {
   var numberSelected = document.getElementById("teamCountDropdown").value;
 
   for(i=0; i<numberSelected; i++) {
-    var inputBox = document.createElement("input");
-    inputBox.id = "customTeam" + i;
-    teamInputSection.appendChild(inputBox);
+    var inputName = document.createElement("input");
+    var inputRating = document.createElement("input");
+    inputName.id = "customTeam" + i;
+    inputRating.id = "customRating" + i;
+    teamInputSection.appendChild(inputName);
+    teamInputSection.appendChild(inputRating);
+    teamInputSection.innerHTML += "<br/>";
   }
   document.getElementById("simulateButton").disabled = false;
 }
@@ -83,8 +87,10 @@ function addCustomLeague(customTeamCount) {
   var customLeague1 = [];
   for(i=0; i<customTeamCount; i++) {
     var customTeamString = "customTeam" + i;
+    var customRatingString = "customRating" + i;
     var customTeamName = document.getElementById(customTeamString).value;
-    customLeague1.push({name: customTeamName, rating: 10, played: 0, won: 0, drawn: 0, lost: 0, for: 0, against: 0, difference: 0, points: 0});
+    var customTeamRating = document.getElementById(customRatingString).value;
+    customLeague1.push({name: customTeamName, rating: customTeamRating, played: 0, won: 0, drawn: 0, lost: 0, for: 0, against: 0, difference: 0, points: 0});
   }
   //return array of team objects
   return customLeague1;
