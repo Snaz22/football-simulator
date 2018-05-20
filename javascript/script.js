@@ -5,6 +5,7 @@ var allMatches = [];
 function leagueSelect(){
   allMatches = [];
   var choice = document.getElementById("leagueChoice").value;
+  var custom = false;
   switch(choice) {
     case "English Premier League":
       currentLeague = copy(english1);
@@ -21,14 +22,72 @@ function leagueSelect(){
     case "French Ligue 1":
       currentLeague = copy(french1);
       break;
+    case "Custom League":
+      currentLeague = addCustomLeague(document.getElementById("teamInputs").children.length);
+      //isCustom();
+      custom = true;
+      break;
   }
-  clearScreen();
-  playGames();
-  calculateGoalDifference();
-  sortTable();
-  printTeams();
-  teamMatchDropdown();
-  //printMatches();
+  if(!custom){
+    clearScreen();
+  } else {
+    clearCustom();
+  }
+    playGames();
+    calculateGoalDifference();
+    sortTable();
+    printTeams();
+    teamMatchDropdown();
+}
+
+function isCustom() {
+  var customTeamDiv = document.getElementById("customTeamChoice");
+  if(document.getElementById("leagueChoice").value !== "Custom League") {
+    clearScreen();
+    document.getElementById("simulateButton").disabled = false;
+  } else {
+    clearCustom();
+    document.getElementById("simulateButton").disabled = true;
+    customTeamDiv.innerHTML = "Select number of teams in your custom league: "
+    var teamCountDropdown = document.createElement("select");
+    teamCountDropdown.id = "teamCountDropdown";
+    var dropdownValue = document.createElement("option");
+    dropdownValue.innerHTML = "No. of teams";
+    dropdownValue.disabled = true;
+    dropdownValue.selected = true;
+    teamCountDropdown.appendChild(dropdownValue);
+    for(i=2; i<25; i++) {
+      var option = document.createElement("option");
+      option.innerHTML = i;
+      teamCountDropdown.appendChild(option);
+      customTeamDiv.appendChild(teamCountDropdown);
+    }
+    document.getElementById("teamCountDropdown").onchange = createTeamInputs;
+  }
+}
+
+function createTeamInputs() {
+  var teamInputSection = document.getElementById("teamInputs");
+  teamInputSection.innerHTML = "";
+  var numberSelected = document.getElementById("teamCountDropdown").value;
+
+  for(i=0; i<numberSelected; i++) {
+    var inputBox = document.createElement("input");
+    inputBox.id = "customTeam" + i;
+    teamInputSection.appendChild(inputBox);
+  }
+  document.getElementById("simulateButton").disabled = false;
+}
+
+function addCustomLeague(customTeamCount) {
+  var customLeague1 = [];
+  for(i=0; i<customTeamCount; i++) {
+    var customTeamString = "customTeam" + i;
+    var customTeamName = document.getElementById(customTeamString).value;
+    customLeague1.push({name: customTeamName, rating: 10, played: 0, won: 0, drawn: 0, lost: 0, for: 0, against: 0, difference: 0, points: 0});
+  }
+  //return array of team objects
+  return customLeague1;
 }
 
 // Create a full copy of the selected league array.
@@ -312,5 +371,14 @@ function printMatchesOneTeam() {
 // Clear the league table and the matches.
 function clearScreen() {
   document.getElementById("displayTable").innerHTML = "";
+  document.getElementById("teamSelectMenu").innerHTML = "";
   document.getElementById("matches").innerHTML = "";
+  document.getElementById("teamInputs").innerHTML = "";
+  document.getElementById("customTeamChoice").innerHTML = "";
+}
+
+function clearCustom() {
+  document.getElementById("displayTable").innerHTML = "";
+  document.getElementById("matches").innerHTML = "";
+  document.getElementById("teamSelectMenu").innerHTML = "";
 }

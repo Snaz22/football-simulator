@@ -37,7 +37,7 @@ var english1 = [
   },
   {
     name: 'Man City',
-    rating: 11.5,
+    rating: 12,
     played: 0,
     won: 0,
     drawn: 0,

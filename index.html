@@ -7,18 +7,25 @@
 <body>
   <h1>Football Simulator</h1>
   <div id="menu">
-    <select id="leagueChoice">
+    <select id="leagueChoice" onchange="isCustom()">
       <option value="" disabled selected>Select League</option>
       <option value="English Premier League">English Premier League</option>
       <option value="Spanish BBVA">Spanish BBVA</option>
       <option value="German Bundesliga">German Bundesliga</option>
       <option value="Italian Serie A">Italian Serie A</option>
       <option value="French Ligue 1">French Ligue 1</option>
+      <option value="Custom League">Custom League</option>
     </select>
-    <input type="submit" name="submit" value="Simulate" onclick="leagueSelect()">
+    <input id="simulateButton" type="submit" name="submit" value="Simulate" onclick="leagueSelect()" disabled>
     <br>
     <div id="teamSelectMenu">
 
+    </div>
+    <div id="customTeamChoice">
+
+    </div>
+    <div id="teamInputs">
+      
     </div>
   </div>
   <div id="displayTable">
@@ -27,6 +34,14 @@
   <div id="matches">
 
   </div>
+
+  <!-- <input type="text" size="30" id="customTeam1"></input>
+  <input type="text" size="30" id="customTeam2"></input>
+  <input type="text" size="30" id="customTeam3"></input>
+  <input type="text" size="30" id="customTeam4"></input>
+  <input type="text" size="30" id="customTeam5"></input> -->
+  <div id="tester"></div>
+
 </body>
 
 <script src="./javascript/englishPrem.js" type="text/javascript"></script>
