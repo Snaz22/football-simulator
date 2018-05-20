@@ -89,7 +89,7 @@ function addCustomLeague(customTeamCount) {
     var customTeamString = "customTeam" + i;
     var customRatingString = "customRating" + i;
     var customTeamName = document.getElementById(customTeamString).value;
-    var customTeamRating = document.getElementById(customRatingString).value;
+    var customTeamRating = parseInt(document.getElementById(customRatingString).value);
     customLeague1.push({name: customTeamName, rating: customTeamRating, played: 0, won: 0, drawn: 0, lost: 0, for: 0, against: 0, difference: 0, points: 0});
   }
   //return array of team objects
