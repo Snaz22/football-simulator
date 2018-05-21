@@ -74,6 +74,9 @@ function createTeamInputs() {
   for(i=0; i<numberSelected; i++) {
     var inputName = document.createElement("input");
     var inputRating = document.createElement("input");
+    inputRating.type = "range";
+    inputRating.min = "1";
+    inputRating.max = "10"
     inputName.id = "customTeam" + i;
     inputRating.id = "customRating" + i;
     teamInputSection.appendChild(inputName);
