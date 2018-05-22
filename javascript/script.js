@@ -74,16 +74,31 @@ function createTeamInputs() {
   for(i=0; i<numberSelected; i++) {
     var inputName = document.createElement("input");
     var inputRating = document.createElement("input");
+    var ratingOutput = document.createElement("span");
     inputRating.type = "range";
-    inputRating.min = "1";
+    inputRating.min = "0";
     inputRating.max = "10"
+    inputRating.value = "5";
+    ratingOutput.innerHTML = inputRating.value;
     inputName.id = "customTeam" + i;
     inputRating.id = "customRating" + i;
+    ratingOutput.id = "customOutput" + i;
+    ratingOutput.value = inputRating.value;
     teamInputSection.appendChild(inputName);
     teamInputSection.appendChild(inputRating);
-    teamInputSection.innerHTML += "<br/>";
+    teamInputSection.appendChild(ratingOutput);
+    teamInputSection.appendChild(document.createElement("br"));
+    document.getElementById("customRating" + i).addEventListener("input", updateRating);
   }
   document.getElementById("simulateButton").disabled = false;
+}
+
+function updateRating() {
+  var customId = document.getElementById(this.id).id.toString();
+  var lastChar = customId.slice(-1);
+  var ratingChange = document.getElementById(this.id).value;
+  var newText = document.getElementById("customOutput" + lastChar);
+  newText.innerHTML = ratingChange;
 }
 
 function addCustomLeague(customTeamCount) {
