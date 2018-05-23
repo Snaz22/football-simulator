@@ -95,7 +95,12 @@ function createTeamInputs() {
 
 function updateRating() {
   var customId = document.getElementById(this.id).id.toString();
-  var lastChar = customId.slice(-1);
+  var lastChar;
+  if(customId.charAt(customId.length - 2) === 'g') {
+    lastChar = customId.slice(-1);
+  } else {
+    lastChar = customId.slice(-2);
+  }
   var ratingChange = document.getElementById(this.id).value;
   var newText = document.getElementById("customOutput" + lastChar);
   newText.innerHTML = ratingChange;
