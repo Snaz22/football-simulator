@@ -1,4 +1,7 @@
-//Array of team objects from selected league, and array of html paragraphs for all of the matches that will take place in theat league.
+/*
+  Array of team objects from selected league, and array of html paragraphs for
+  all of the matches that will take place in theat league.
+*/
 var currentLeague;
 var allMatches = [];
 
@@ -24,7 +27,6 @@ function leagueSelect(){
       break;
     case "Custom League":
       currentLeague = addCustomLeague(document.getElementById("teamCountDropdown").value);
-      //isCustom();
       custom = true;
       break;
   }
@@ -40,6 +42,10 @@ function leagueSelect(){
     teamMatchDropdown();
 }
 
+/*
+  Check to see if the selected league is the 'Custom League' option and apply
+  additional option for selecting number of teams required.
+*/
 function isCustom() {
   var customTeamDiv = document.getElementById("customTeamChoice");
   if(document.getElementById("leagueChoice").value !== "Custom League") {
@@ -66,6 +72,10 @@ function isCustom() {
   }
 }
 
+/*
+  Create the input fields so the user can enter their custom teams and provide
+  a rating for each team.
+*/
 function createTeamInputs() {
   var teamInputSection = document.getElementById("teamInputs");
   teamInputSection.innerHTML = "";
@@ -93,6 +103,9 @@ function createTeamInputs() {
   document.getElementById("simulateButton").disabled = false;
 }
 
+/*
+  Update the rating shown as the user moves the slider.
+*/
 function updateRating() {
   var customId = document.getElementById(this.id).id.toString();
   var lastChar;
@@ -106,6 +119,9 @@ function updateRating() {
   newText.innerHTML = ratingChange;
 }
 
+/*
+  Create the custom league based on the user's input.
+*/
 function addCustomLeague(customTeamCount) {
   var customLeague1 = [];
   for(i=0; i<customTeamCount; i++) {
@@ -421,6 +437,7 @@ function clearScreen() {
   document.getElementById("customTeamChoice").innerHTML = "";
 }
 
+// Clear screen function for custom leagues only.
 function clearCustom() {
   document.getElementById("displayTable").innerHTML = "";
   document.getElementById("matches").innerHTML = "";
