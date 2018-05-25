@@ -242,7 +242,7 @@ function playGames() {
         }
 
         // Add a paragraph element to the 'allMatches' array, which contains the text output for each fixture.
-        var thisGame = document.createElement('p');
+        var thisGame = document.createElement('span');
         thisGame.innerHTML = currentLeague[i].name + ' ' + homeGoals + ' - ' + awayGoals+ ' ' + currentLeague[j].name;
         allMatches.push(thisGame);
 
@@ -375,8 +375,13 @@ function teamMatchDropdown() {
 
 // Display only the selected team's results.
 function printMatchesOneTeam() {
-  document.getElementById("matches").innerHTML = "";
+  var matchesArea = document.getElementById("matches");
+  matchesArea.innerHTML = "";
   var selectedTeam = document.getElementById("teamSelect").value;
+  var fixtureHeading = document.createElement("div")
+  fixtureHeading.innerHTML = selectedTeam + " Fixtures";
+  fixtureHeading.style = "font-size: 24px; font-weight: bold;";
+  matchesArea.appendChild(fixtureHeading);
   var matchArray = [];
   allMatches.forEach(function(match) {
     if(match.innerHTML.indexOf(selectedTeam) != -1) {
@@ -393,7 +398,17 @@ function printMatchesOneTeam() {
     matchArray[index] = temp;
   }
   matchArray.forEach(function(currentTeamMatch) {
-    document.getElementById("matches").appendChild(currentTeamMatch);
+    var homeAwayTag = document.createElement("span");
+    if(currentTeamMatch.innerHTML.indexOf(selectedTeam) > 0) {
+      homeAwayTag.innerHTML = "<strong>A</strong>";
+      matchesArea.appendChild(homeAwayTag);
+    } else {
+      homeAwayTag.innerHTML = "<strong>H</strong>";
+      matchesArea.appendChild(homeAwayTag);
+    }
+    currentTeamMatch.style = "margin: 10px 0 10px 5px; display: inline-block;";
+    matchesArea.appendChild(currentTeamMatch);
+    matchesArea.appendChild(document.createElement("br"));
   });
 }
 
