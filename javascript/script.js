@@ -258,9 +258,12 @@ function playGames() {
         }
 
         // Add a paragraph element to the 'allMatches' array, which contains the text output for each fixture.
-        var thisGame = document.createElement('span');
-        thisGame.innerHTML = currentLeague[i].name + ' ' + homeGoals + ' - ' + awayGoals+ ' ' + currentLeague[j].name;
+
+        var thisGame = currentLeague[i].name + ' ' + homeGoals + ' - ' + awayGoals+ ' ' + currentLeague[j].name;
         allMatches.push(thisGame);
+        // var thisGame = document.createElement('span');
+        // thisGame.innerHTML = currentLeague[i].name + ' ' + homeGoals + ' - ' + awayGoals+ ' ' + currentLeague[j].name;
+        // allMatches.push(thisGame);
 
         // Update team totals after fixture result.
         currentLeague[i].played++;
@@ -400,7 +403,7 @@ function printMatchesOneTeam() {
   matchesArea.appendChild(fixtureHeading);
   var matchArray = [];
   allMatches.forEach(function(match) {
-    if(match.innerHTML.indexOf(selectedTeam) != -1) {
+    if(match.indexOf(selectedTeam) != -1) {
       matchArray.push(match);
     }
   });
@@ -415,15 +418,19 @@ function printMatchesOneTeam() {
   }
   matchArray.forEach(function(currentTeamMatch) {
     var homeAwayTag = document.createElement("span");
-    if(currentTeamMatch.innerHTML.indexOf(selectedTeam) > 0) {
+    if(currentTeamMatch.indexOf(selectedTeam) > 0) {
       homeAwayTag.innerHTML = "<strong>A</strong>";
       matchesArea.appendChild(homeAwayTag);
     } else {
       homeAwayTag.innerHTML = "<strong>H</strong>";
       matchesArea.appendChild(homeAwayTag);
     }
-    currentTeamMatch.style = "margin: 10px 0 10px 5px; display: inline-block;";
-    matchesArea.appendChild(currentTeamMatch);
+    var currentFixture = document.createElement('span');
+    currentFixture.innerHTML = currentTeamMatch;
+    currentFixture.style = "margin: 10px 0 10px 5px; display: inline-block;";
+    matchesArea.appendChild(currentFixture);
+    //currentTeamMatch.style = "margin: 10px 0 10px 5px; display: inline-block;";
+    //matchesArea.appendChild(currentTeamMatch);
     matchesArea.appendChild(document.createElement("br"));
   });
 }
