@@ -98,7 +98,13 @@ function createTeamInputs() {
     teamInputSection.appendChild(inputRating);
     teamInputSection.appendChild(ratingOutput);
     teamInputSection.appendChild(document.createElement("br"));
-    document.getElementById("customRating" + i).addEventListener("input", updateRating);
+  //   if(document.getElementById("customRating" + i).addEventListener) {
+  //   document.getElementById("customRating" + i).addEventListener("input", updateRating);
+  // } else {
+  //   document.getElementById("customRating" + i).attachEvent("change", updateRating);
+  // }
+  document.getElementById("customRating" + i).oninput = updateRating;
+  document.getElementById("customRating" + i).onchange = updateRating;
   }
   document.getElementById("simulateButton").disabled = false;
 }
