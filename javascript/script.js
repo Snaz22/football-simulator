@@ -445,8 +445,6 @@ function printMatchesOneTeam() {
     currentFixture.innerHTML = currentTeamMatch;
     currentFixture.style = "margin: 10px 0 10px 5px; display: inline-block;";
     matchesArea.appendChild(currentFixture);
-    //currentTeamMatch.style = "margin: 10px 0 10px 5px; display: inline-block;";
-    //matchesArea.appendChild(currentTeamMatch);
     matchesArea.appendChild(document.createElement("br"));
   });
 }
