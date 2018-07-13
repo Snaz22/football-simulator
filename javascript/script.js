@@ -39,7 +39,7 @@ function leagueSelect() {
   playGames();
   calculateGoalDifference();
   sortTable();
-  printTeams();
+  printTeams(choice);
   teamMatchDropdown();
 }
 
@@ -306,14 +306,18 @@ function playGames() {
 }
 
 // Print the final league table.
-function printTeams() {
+function printTeams(choice) {
 
   // Create table.
   var leagueTable = document.createElement('table');
   leagueTable.id = 'leagueTable';
+  var leagueCaption = document.createElement('caption');
+  leagueCaption.id = 'leagueCaption'
+  leagueCaption.innerHTML = choice;
   var leagueHeader = document.createElement('tr');
   leagueHeader.id = 'leagueHeader';
   document.getElementById('displayTable').appendChild(leagueTable);
+  document.getElementById('leagueTable').appendChild(leagueCaption);
   document.getElementById('leagueTable').appendChild(leagueHeader);
   var headerTags = ['P', 'W', 'D', 'L', 'F', 'A', 'GD', 'Pts'];
   var headerTagCount = 0;

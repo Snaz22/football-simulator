@@ -1,6 +1,35 @@
 body {
-  background-color: #ccc;
+  background: url('./images/football_pitch_background_1024x672.jpg') #004400;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
   margin: auto;
   width: 50%;
   text-align: center;
+  text-shadow: 2px 2px 1px #000000;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#leagueTable {
+  width: 60%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+#leagueCaption {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+td {
+  padding-left: 10px;
+}
+
+td:first-child {
+  padding-left: 1px;
 }
