@@ -407,8 +407,12 @@ function teamMatchDropdown() {
   var teamMatchSubmit = document.createElement("input");
   teamMatchSubmit.type = "submit";
   teamMatchSubmit.id = "teamMatch";
+  teamMatchSubmit.disabled = true;
   document.getElementById("teamSelectMenu").appendChild(teamMatchSubmit);
   teamMatchSubmit.value = "Show Results";
+  dropdown.onchange = function() {
+    document.getElementById("teamMatch").disabled = false;
+  }
   document.getElementById("teamMatch").addEventListener("click", printMatchesOneTeam);
 }
 
