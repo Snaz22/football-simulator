@@ -26,8 +26,13 @@ h1 {
   color: #ffffff;
 }
 
+#teamMatch {
+  margin-left: 5px;
+}
+
 td {
   padding-left: 10px;
+  white-space: nowrap;
 }
 
 td:first-child {
