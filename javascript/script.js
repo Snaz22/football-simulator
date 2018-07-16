@@ -312,7 +312,7 @@ function printTeams(choice) {
   var leagueTable = document.createElement('table');
   leagueTable.id = 'leagueTable';
   var leagueCaption = document.createElement('caption');
-  leagueCaption.id = 'leagueCaption'
+  leagueCaption.id = 'leagueCaption';
   leagueCaption.innerHTML = choice;
   var leagueHeader = document.createElement('tr');
   leagueHeader.id = 'leagueHeader';
@@ -412,7 +412,7 @@ function teamMatchDropdown() {
   teamMatchSubmit.value = "Show Results";
   dropdown.onchange = function() {
     document.getElementById("teamMatch").disabled = false;
-  }
+  };
   document.getElementById("teamMatch").addEventListener("click", printMatchesOneTeam);
 }
 
@@ -455,6 +455,10 @@ function printMatchesOneTeam() {
     matchesArea.appendChild(currentFixture);
     matchesArea.appendChild(document.createElement("br"));
   });
+
+  $("html, body").animate ({
+    scrollTop: $("#matches").offset().top
+  }, 1000);
 }
 
 // Clear the league table and the matches.
