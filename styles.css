@@ -18,6 +18,7 @@ h1 {
   width: 60%;
   margin: 10px auto;
   text-align: left;
+  background-color: rgba(0, 40, 0, 0.8);
 }
 
 #leagueCaption {

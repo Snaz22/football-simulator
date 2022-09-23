@@ -1,30 +1,6 @@
 var english1 = [
   {
     name: 'Arsenal',
-    rating: 10,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Man Utd',
-    rating: 10.5,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Chelsea',
     rating: 11,
     played: 0,
     won: 0,
@@ -36,8 +12,32 @@ var english1 = [
     points: 0
   },
   {
+    name: 'Man Utd',
+    rating: 9,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Chelsea',
+    rating: 10,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
     name: 'Man City',
-    rating: 12,
+    rating: 13,
     played: 0,
     won: 0,
     drawn: 0,
@@ -49,7 +49,7 @@ var english1 = [
   },
   {
     name: 'Liverpool',
-    rating: 10,
+    rating: 11,
     played: 0,
     won: 0,
     drawn: 0,
@@ -73,7 +73,7 @@ var english1 = [
   },
   {
     name: 'West Ham',
-    rating: 5.5,
+    rating: 5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -85,7 +85,7 @@ var english1 = [
   },
   {
     name: 'Southampton',
-    rating: 6.5,
+    rating: 5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -109,6 +109,30 @@ var english1 = [
   },
   {
     name: 'Newcastle',
+    rating: 7,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Brentford',
+    rating: 6,
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    for: 0,
+    against: 0,
+    difference: 0,
+    points: 0
+  },
+  {
+    name: 'Aston Villa',
     rating: 5,
     played: 0,
     won: 0,
@@ -120,32 +144,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Burnley',
-    rating: 4,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
-    name: 'Watford',
-    rating: 4,
-    played: 0,
-    won: 0,
-    drawn: 0,
-    lost: 0,
-    for: 0,
-    against: 0,
-    difference: 0,
-    points: 0
-  },
-  {
     name: 'Crystal Palace',
-    rating: 3,
+    rating: 5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -157,7 +157,7 @@ var english1 = [
   },
   {
     name: 'Bournemouth',
-    rating: 5.5,
+    rating: 4,
     played: 0,
     won: 0,
     drawn: 0,
@@ -168,8 +168,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Huddersfield',
-    rating: 3,
+    name: 'Fulham',
+    rating: 4,
     played: 0,
     won: 0,
     drawn: 0,
@@ -181,7 +181,7 @@ var english1 = [
   },
   {
     name: 'Brighton',
-    rating: 4,
+    rating: 6,
     played: 0,
     won: 0,
     drawn: 0,
@@ -192,8 +192,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Swansea',
-    rating: 3.5,
+    name: 'Leeds',
+    rating: 4.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -204,7 +204,7 @@ var english1 = [
     points: 0
   },
   {
-    name: 'Stoke',
+    name: 'Wolves',
     rating: 5.5,
     played: 0,
     won: 0,
@@ -216,8 +216,8 @@ var english1 = [
     points: 0
   },
   {
-    name: 'West Brom',
-    rating: 4,
+    name: 'Nottm Forest',
+    rating: 3.5,
     played: 0,
     won: 0,
     drawn: 0,
@@ -229,7 +229,7 @@ var english1 = [
   },
   {
     name: 'Everton',
-    rating: 6.5,
+    rating: 5,
     played: 0,
     won: 0,
     drawn: 0,
