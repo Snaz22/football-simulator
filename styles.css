@@ -27,6 +27,10 @@ h1 {
   color: #ffffff;
 }
 
+#matches {
+  background-color: rgba(0, 40, 0, 0.8);
+}
+
 #teamMatch {
   margin-left: 5px;
 }
